@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Java.Util.Zip;
 
 namespace projekt
 {
@@ -17,6 +18,7 @@ namespace projekt
     {
         public static TextView text_suma;
         private ListView mListView;
+ 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -25,17 +27,30 @@ namespace projekt
             mListView = FindViewById<ListView>(Resource.Id.kosz_listview);
             MyViewAdapter adapter = new MyViewAdapter(this, Kosz.lista, Resource.Layout.Koszyk);
             mListView.Adapter = adapter;
-            
+
             #region suma
             Button zatwierc = FindViewById<Button>(Resource.Id.kosz_zatwierc);
             text_suma = FindViewById<TextView>(Resource.Id.kosz_cena);
-            Kosz.Set_Sum(text_suma);
-            
+
+            Set_Sum(text_suma);
+
             #endregion
 
             // Create your application here
         }
-        
+        public static void Del_produkt(Produkt produkt)
+        {
+            Kosz.suma -= produkt.Price;
+            Kosz.lista.Remove(produkt);
+            Set_Sum(text_suma);
+
+        }
+        public static void Set_Sum(TextView textview)
+        {
+            textview.Text = "Suma : " + Kosz.suma;
+            textview.Invalidate();
+        }
+
     }
 
     public static class Kosz
@@ -49,11 +64,7 @@ namespace projekt
             suma += produkt.Price;
             
         }
-        public static void Del_produkt(Produkt produkt)
-        {
-            suma -= produkt.Price;
-            lista.Remove(produkt);
-        }
+        
         public static bool czy_pusty()
         {
             if (lista.Count != 0)
@@ -65,10 +76,6 @@ namespace projekt
         {
             return lista[position].Name;
         }
-        public static void Set_Sum(TextView text)
-        {
-           
-            text.Text = "Razem: " + Kosz.suma;
-        }
+       
     }
 }

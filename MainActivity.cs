@@ -39,6 +39,7 @@ namespace projekt
 
                 if (result != null)
                     kod.Text = result.Text;
+                
             };
         }
 

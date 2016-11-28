@@ -79,7 +79,6 @@
     <Compile Include="Produkt.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\values\czarek.cs" />
     <Compile Include="REST.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>

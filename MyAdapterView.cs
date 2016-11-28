@@ -115,7 +115,7 @@ namespace projekt
                 AlertDialog alertDialog = builder.Create();
                 alertDialog.SetTitle("Czy chcesz usun¹æ produkt z koszyka?");
                 alertDialog.SetMessage(mItems[position].Name + "\nCena: " + mItems[position].Price);
-                alertDialog.SetButton2("Tak", (s, ev) => { Kosz.Del_produkt(mItems[position]); NotifyDataSetChanged(); alertDialog.Cancel(); });
+                alertDialog.SetButton2("Tak", (s, ev) => { Koszyk.Del_produkt(mItems[position]); NotifyDataSetChanged(); alertDialog.Cancel(); });
                 alertDialog.SetButton("Nie", (s, ev) => { alertDialog.Cancel(); });
                 alertDialog.Show();
             }
