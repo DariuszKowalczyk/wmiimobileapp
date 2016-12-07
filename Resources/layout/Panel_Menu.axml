@@ -24,10 +24,10 @@
         android:text="Zmień dane osobowe"
         android:layout_width="match_parent"
         android:layout_height="66.5dp"
-        android:id="@+id/Zmien_dane" />
+        android:id="@+id/Button_Zmien_dane" />
     <Button
-        android:text="Wyślij zamówienie"
+        android:text="Zobacz strone internetowa"
         android:layout_width="match_parent"
         android:layout_height="62.5dp"
-        android:id="@+id/Wyslij_zamowienie" />
+        android:id="@+id/Strona" />
 </LinearLayout>

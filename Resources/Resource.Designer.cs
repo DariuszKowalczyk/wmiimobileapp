@@ -66,83 +66,113 @@ namespace projekt
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f05000c
-			public const int Dodaj_do_koszyka = 2131034124;
-			
-			// aapt resource value: 0x7f050008
-			public const int ImageProdukt = 2131034120;
-			
-			// aapt resource value: 0x7f050010
-			public const int Skanuj = 2131034128;
-			
 			// aapt resource value: 0x7f050018
-			public const int Wyslij_zamowienie = 2131034136;
+			public const int Button_Zmien_dane = 2131034136;
 			
-			// aapt resource value: 0x7f050017
-			public const int Zmien_dane = 2131034135;
+			// aapt resource value: 0x7f05000b
+			public const int Dodaj_do_koszyka = 2131034123;
 			
-			// aapt resource value: 0x7f050016
-			public const int button_koszyk = 2131034134;
-			
-			// aapt resource value: 0x7f050015
-			public const int button_oferta = 2131034133;
-			
-			// aapt resource value: 0x7f050019
-			public const int contentFrame = 2131034137;
+			// aapt resource value: 0x7f050007
+			public const int ImageProdukt = 2131034119;
 			
 			// aapt resource value: 0x7f050011
-			public const int editKod = 2131034129;
+			public const int Skanuj = 2131034129;
+			
+			// aapt resource value: 0x7f050019
+			public const int Strona = 2131034137;
+			
+			// aapt resource value: 0x7f050012
+			public const int Zaloguj = 2131034130;
+			
+			// aapt resource value: 0x7f050017
+			public const int button_koszyk = 2131034135;
+			
+			// aapt resource value: 0x7f050016
+			public const int button_oferta = 2131034134;
+			
+			// aapt resource value: 0x7f050023
+			public const int contentFrame = 2131034147;
+			
+			// aapt resource value: 0x7f050010
+			public const int edit_kod = 2131034128;
 			
 			// aapt resource value: 0x7f05000e
-			public const int editText1 = 2131034126;
+			public const int edit_nralbumu = 2131034126;
 			
-			// aapt resource value: 0x7f050014
-			public const int imageView1 = 2131034132;
+			// aapt resource value: 0x7f050015
+			public const int imageView1 = 2131034133;
 			
 			// aapt resource value: 0x7f050001
 			public const int kosz_cena = 2131034113;
 			
-			// aapt resource value: 0x7f050007
-			public const int kosz_del = 2131034119;
+			// aapt resource value: 0x7f050006
+			public const int kosz_del = 2131034118;
 			
 			// aapt resource value: 0x7f050000
 			public const int kosz_listview = 2131034112;
 			
-			// aapt resource value: 0x7f050005
-			public const int kosz_name = 2131034117;
-			
 			// aapt resource value: 0x7f050004
-			public const int kosz_obraz = 2131034116;
-			
-			// aapt resource value: 0x7f050006
-			public const int kosz_opis = 2131034118;
-			
-			// aapt resource value: 0x7f050002
-			public const int kosz_zatwierc = 2131034114;
-			
-			// aapt resource value: 0x7f050013
-			public const int listaProdukt = 2131034131;
+			public const int kosz_name = 2131034116;
 			
 			// aapt resource value: 0x7f050003
-			public const int relativeLayout1 = 2131034115;
+			public const int kosz_obraz = 2131034115;
 			
-			// aapt resource value: 0x7f05000f
-			public const int textView1 = 2131034127;
+			// aapt resource value: 0x7f050005
+			public const int kosz_opis = 2131034117;
+			
+			// aapt resource value: 0x7f05000c
+			public const int linearLayout1 = 2131034124;
+			
+			// aapt resource value: 0x7f050014
+			public const int listaProdukt = 2131034132;
+			
+			// aapt resource value: 0x7f050013
+			public const int progressBarMain = 2131034131;
+			
+			// aapt resource value: 0x7f050002
+			public const int relativeLayout1 = 2131034114;
 			
 			// aapt resource value: 0x7f05000d
-			public const int textView2 = 2131034125;
+			public const int textView1 = 2131034125;
 			
-			// aapt resource value: 0x7f05000a
-			public const int txtCena = 2131034122;
+			// aapt resource value: 0x7f05000f
+			public const int textView2 = 2131034127;
 			
 			// aapt resource value: 0x7f050009
-			public const int txtNazwa = 2131034121;
+			public const int txtCena = 2131034121;
 			
-			// aapt resource value: 0x7f05000b
-			public const int txtOpis = 2131034123;
+			// aapt resource value: 0x7f050008
+			public const int txtNazwa = 2131034120;
 			
-			// aapt resource value: 0x7f050012
-			public const int zaloguj = 2131034130;
+			// aapt resource value: 0x7f05000a
+			public const int txtOpis = 2131034122;
+			
+			// aapt resource value: 0x7f050022
+			public const int zm_anuluj = 2131034146;
+			
+			// aapt resource value: 0x7f05001b
+			public const int zm_imie = 2131034139;
+			
+			// aapt resource value: 0x7f05001d
+			public const int zm_nazwisko = 2131034141;
+			
+			// aapt resource value: 0x7f05001f
+			public const int zm_nralbumu = 2131034143;
+			
+			// aapt resource value: 0x7f05001a
+			public const int zm_text_imie = 2131034138;
+			
+			// aapt resource value: 0x7f050020
+			public const int zm_text_kod = 2131034144;
+			
+			// aapt resource value: 0x7f05001c
+			public const int zm_text_nazwisko = 2131034140;
+			
+			// aapt resource value: 0x7f05001e
+			public const int zm_text_nralbumu = 2131034142;
+			
+			// aapt resource value: 0x7f050021
+			public const int zm_zapisz = 2131034145;
 			
 			static Id()
 			{
@@ -176,10 +206,13 @@ namespace projekt
 			public const int Panel_Menu = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int zxingscanneractivitylayout = 2130903046;
+			public const int Zmien_dane = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int zxingscannerfragmentlayout = 2130903047;
+			public const int zxingscanneractivitylayout = 2130903047;
+			
+			// aapt resource value: 0x7f030008
+			public const int zxingscannerfragmentlayout = 2130903048;
 			
 			static Layout()
 			{

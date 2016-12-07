@@ -16,7 +16,7 @@ using Android.Transitions;
 namespace projekt
 {
     // produkt do resta
-    /*
+    
     public class Produkt
     {
         public int Id { get; set; }
@@ -25,8 +25,9 @@ namespace projekt
         public string PictureUrl { get; set; }
         public decimal Price { get; set; }
     }
-    */
+    
     // test produkt 
+    /*
     public class Produkt
     {
         public int Id { get; set; }
@@ -43,4 +44,5 @@ namespace projekt
             this.PictureUrl = zdj;
         }
     }
+    */
 }

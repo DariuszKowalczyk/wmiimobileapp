@@ -29,9 +29,13 @@ namespace projekt
             mListView.Adapter = adapter;
 
             #region suma
-            Button zatwierc = FindViewById<Button>(Resource.Id.kosz_zatwierc);
+            
             text_suma = FindViewById<TextView>(Resource.Id.kosz_cena);
-
+            Kosz.suma = 0;
+            foreach(var x in Kosz.lista)
+            {
+                Kosz.suma += x.Price;
+            }
             Set_Sum(text_suma);
 
             #endregion
@@ -47,7 +51,7 @@ namespace projekt
         }
         public static void Set_Sum(TextView textview)
         {
-            textview.Text = "Suma : " + Kosz.suma;
+            textview.Text = "Suma : " + Kosz.suma + "z³";
             textview.Invalidate();
         }
 
@@ -57,7 +61,6 @@ namespace projekt
     {
         public static decimal suma;
         public static List<Produkt> lista = new List<Produkt>();
-      //  public static Button przycisk = (Button)(Resource.Id.)
         public static void Add_produkt(Produkt produkt)
         {
             lista.Add(produkt);

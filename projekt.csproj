@@ -71,6 +71,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\OrderDetailDTO.cs" />
+    <Compile Include="DTO\OrderDTO.cs" />
     <Compile Include="Koszyk.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MyAdapterView.cs" />
@@ -81,8 +83,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="REST.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="zmien_dane.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
@@ -100,6 +104,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Koszyk.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Zmien_dane.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

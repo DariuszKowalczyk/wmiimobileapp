@@ -1,17 +1,16 @@
 #WMiI Mobile App
 
 ## Working with source control
-1. Clone the repository (`git clone https://github.com/cmorawski96/wmiimobileapp.git`)
-2. Make appropriate changes
-3. Check affected files with `git status`
-4. **Make sure** that changes are correct by looking at `git diff`'s output
-5. Add modified files (usually just `git add .` in order to add all files)
-6. Make a commit (use `git commit -m "Commit description"` - remember about the `-m` parameter as long as you don't like vim)
-7. Push a commit to the remote repository (means this one) using `git push origin master`
-8. To pull changes from other collaborators use `git pull origin master`
-9. In case of *merge conflict*, email sobak[at]sobak.pl or pray to God
-10. Feel free to use this readme to help your collaborators at their projects
+	Do uruchomienia projektu potrzeba:
+	1. Visual studio 2013 lub nowszej wersji
+	2. Zainstalowanego pakietu Xamarin i potrzebnych do niego skladników
+	3. Emulator telefonu(zazwyczaj jest juz przy instalacji pakietu Xamarina)
+	4. Dostępu do internetu
+	
+	Aplikacja działa w zależnosci od prędkości internetu, przy wolniejszym może
+	wydawawać się, że aplikacja się zawiesza, ale tak nie jest(nie zrobiłem jeszcze kółeczka ladowania).
+	Uruchamiać aplikację z już wcześniej włączonym internetem.
 
-## Authors:
-1. Dariusz Kowalczyk
-2. Cezary Morawski
+## Author:
+Dariusz Kowalczyk
+

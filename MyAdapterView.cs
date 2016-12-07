@@ -5,6 +5,8 @@ using Android.Views;
 using Android.Widget;
 using Java.IO;
 using Java.Net;
+using projekt.DTO;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Net;
@@ -13,7 +15,7 @@ namespace projekt
 {
     class MyViewAdapter : BaseAdapter<Produkt>
     {
-        public List<Produkt> mItems;
+        public static List<Produkt> mItems;
         public Context mContext;
         public View row;
         int MResource;
@@ -61,7 +63,6 @@ namespace projekt
                     Button przycisk = row.FindViewById<Button>(Resource.Id.kosz_del);
 
                     przycisk.Click += delegate { Okienko_Usun(position); };
-                    
                 }
             }
 
@@ -103,7 +104,13 @@ namespace projekt
             AlertDialog alertDialog = builder.Create();
             alertDialog.SetTitle("Czy chcesz dodaæ produkt do koszyka?");
             alertDialog.SetMessage(mItems[position].Name + "\nCena: " + mItems[position].Price);
-            alertDialog.SetButton2("Tak", (s, ev) => { Kosz.Add_produkt(mItems[position]); alertDialog.Cancel(); });
+            alertDialog.SetButton2("Tak", (s, ev) => 
+            {
+                try { REST.REST_AddProduct(mItems[position]);
+                    Toast komunikat = Toast.MakeText(mContext, "Produkt dodano do koszyka!", ToastLength.Long);
+                    komunikat.Show();
+                } catch{REST.REST_Problem(mContext);}finally{ alertDialog.Cancel(); }
+            });
             alertDialog.SetButton("Nie", (s, ev) => { alertDialog.Cancel(); });
             alertDialog.Show();
         }
@@ -115,7 +122,7 @@ namespace projekt
                 AlertDialog alertDialog = builder.Create();
                 alertDialog.SetTitle("Czy chcesz usun¹æ produkt z koszyka?");
                 alertDialog.SetMessage(mItems[position].Name + "\nCena: " + mItems[position].Price);
-                alertDialog.SetButton2("Tak", (s, ev) => { Koszyk.Del_produkt(mItems[position]); NotifyDataSetChanged(); alertDialog.Cancel(); });
+                alertDialog.SetButton2("Tak", (s, ev) => { REST.REST_DelPKosz(mContext,mItems[position]); NotifyDataSetChanged(); alertDialog.Cancel(); });
                 alertDialog.SetButton("Nie", (s, ev) => { alertDialog.Cancel(); });
                 alertDialog.Show();
             }
